@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafe website</title>
+</head>
+<body>
+    <header style="background-color: gray;text-align: center;">
+    <h1>Gul Cafe</h1>
+    <p>fresh food,great taste</p>
+    </header>
+    <nav style="background-color: chocolate;padding: 15px;">
+    <a href="#Home">Home</a>
+    <a href="#Menu">Menu</a>
+    <a href="#About">About</a>
+    <a href="#Contact">Contact</a>
+    </nav>
+    <section id="Home">
+        <h2>Home</h2>
+        <p>Welcome to Gul Cafe</p>
+        <p>Welcome to Gul Café! We serve fresh, delicious, and quality food in a friendly atmosphere. Enjoy tasty meals and refreshing drinks with us.</p>
+        <button style="background-color:green"onclick="alert('thank you for your order!')">ordre Now</button>
+    </section>
+    <section id="Menu">
+        <h2>Menu</h2>
+        <p>
+            <ul>
+                <li>burger:price 300Rs <img src="WhatsApp Image 2026-09-10 at 11.50.30 PM (1).jpeg"width="35"hight="20" alt="this is an imag"></li>
+                <li>pizza:price 1000Rs <img src="WhatsApp Image 2026-09-10 at 11.50.30 PM.jpeg"width="35"hight="20" alt="this is an imag"></li>
+                <li>cold drink:price 100Rs <img src="WhatsApp Image 2026-09-10 at 11.50.29 PM.jpeg"width="35"hight="20" alt="this is an imag"></li>
+                
+            </ul>
+        </p>
+
+    </section>
+    <section id="About">
+        <h2>About</h2>
+        <p>Gul Café is a friendly place where you can enjoy fresh and delicious food. We prepare our meals with quality ingredients and care. Our goal is to provide great taste and a pleasant experience for every customer.</p>
+    </section>
+    <section id="Contact">
+        <h2>Contact</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text">
+            <br><br>
+            <label>Email:</label>
+            <input type="email">
+            <br><br>
+            <label>Message:</label>
+            <textarea placeholder="write your msg"></textarea>
+            <br><br>
+            <button style="background-color: green;">submit</button>
+        </form>
+
+    </section>
+    <footer style="background-color: burlywood;text-align: center;">
+        <p>© 2026 Gul Café</p>
+    </footer>
+     <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Thank you for contacting me!");
+
+        this.reset();
+    });
+</script>
+
+</body>
+</html>
